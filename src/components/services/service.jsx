@@ -11,14 +11,17 @@ function Service() {
         <div className='flex justify-between items-center mt-6'>
             <div className='transition-all w-[320px]  hover:shadow-lg hover:shadow-[#8B41D2] grid place-items-center border border-[#eeeeee] rounded-[32px] h-[300px]'>
                 <img src='images/comb.png'/>
+                <p className='font-nuni font-[500] text-[24px]'>Trend Haircut</p>
             </div>
 
             <div className='transition-all w-[320px]  hover:shadow-lg hover:shadow-[#8B41D2] grid place-items-center border border-[#eeeeee] rounded-[32px] h-[300px]'>
                 <img src='images/hair-coloring.png' />
+                <p className='font-nuni font-[500] text-[24px]'>Hair coloring</p>
             </div>
 
             <div className=' transition-all  w-[320px] hover:shadow-lg hover:shadow-[#8B41D2] grid place-items-center border border-[#eeeeee] rounded-[32px] h-[300px]'>
                 <img src='images/spa.png' />
+                <p className='font-nuni font-[500] text-[24px]'>Spa</p>
             </div>
         </div>
 

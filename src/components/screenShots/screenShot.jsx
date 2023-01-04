@@ -6,7 +6,7 @@ function ScreenShot() {
     <div>
         <Headers header="Screenshots of the application" text="Get a glimpse of the app" />
 
-        <div className='grid grid-cols-2 w-[1100px] m-auto gap-[20px]'>
+        <div className='grid grid-cols-2 w-[1100px] m-auto gap-[100px]'>
             <div className='m-auto'>
                 <img className='w-[80%] m-auto' src='images/phone1.png' />
             </div>
