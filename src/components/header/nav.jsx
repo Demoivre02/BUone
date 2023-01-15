@@ -1,4 +1,5 @@
 import React from 'react'
+import DrawerNav from './drawer'
 
 function Nav() {
   return (
@@ -10,34 +11,39 @@ function Nav() {
                     <img src='images/buonelogo.png' alt='logo' />
                 </div>
 
-                <div className='flex justify-evenly w-[60%] items-center'>      
-                  <div className=' w-[500px]'>
+                <div className='md:flex hidden justify-evenly lg:w-[60%] w-[70%] items-center'>      
+                  <div className=' lg:w-[500px] w-auto'>
                       <ul className='flex justify-evenly items-center'>
-                          <li className='font-[500] font-poppins text-[14px] cursor-pointer text-[#fff] w-[65px] mx-[1.5em]'>Home</li>
-                          <li className='font-[500] font-poppins text-[14px] cursor-pointer text-[#fff] w-[65px] mx-[1.5em]'>Features</li>
-                          <li className='font-[500] font-poppins text-[14px] cursor-pointer text-[#fff] w-[65px] mx-[1.5em]'>Solutions</li>
-                          <li className='font-[500] font-poppins text-[14px] cursor-pointer text-[#fff] w-[65px] mx-[1.5em]'>Services</li>
+                          <li className='font-[500] font-poppins lg:text-[14px] text-[12px] cursor-pointer text-[#fff] lg:w-[65px] w-[60px] lg:mx-[1.5em] mx-[12px]'>Home</li>
+                          <li className='font-[500] font-poppins lg:text-[14px] text-[12px] cursor-pointer text-[#fff] lg:w-[65px] w-[60px] lg:mx-[1.5em] mx-[12px]'>Features</li>
+                          <li className='font-[500] font-poppins lg:text-[14px] text-[12px] cursor-pointer text-[#fff] lg:w-[65px] w-[60px] lg:mx-[1.5em] mx-[12px]'>Solutions</li>
+                          <li className='font-[500] font-poppins lg:text-[14px] text-[12px] cursor-pointer text-[#fff] lg:w-[65px] w-[60px] lg:mx-[1.5em] mx-[12px]'>Services</li>
                       </ul>
                   </div>
 
 
                   <div className='flex justify-evenly items-center'>
 
-                    <div className='w-[120px] h-[53px] mx-4 cursor-pointer flex justify-center items-center bg-transparent rounded-[16px] border border-[#fff]'>
-                        <p className='text-[18px] text-white font-[500]'>Log in</p>
+                    <div className='xl:w-[120px] w-[100px] lg:h-[53px] h-[45px] lg:mx-4 mx-2 cursor-pointer flex justify-center items-center bg-transparent rounded-[16px] border border-[#fff]'>
+                        <p className='lg:text-[18px] text-[16px] text-white font-[500]'>Log in</p>
                       </div>
 
-                      <div className='w-[120px] h-[53px] mx-4 cursor-pointer flex justify-center items-center bg-[#A1EBE4] rounded-[16px]  '>
-                        <p className='text-[18px] text-[#000] font-[500]'>Sign Up</p>
+                      <div className='xl:w-[120px] w-[100px] lg:h-[53px] h-[45px] lg:mx-4 mx-2 cursor-pointer flex justify-center items-center bg-[#A1EBE4] rounded-[16px]  '>
+                        <p className='lg:text-[18px] text-[16px] text-[#000] font-[500]'>Sign Up</p>
                       </div>
 
                   </div>
 
-        
                 </div>
-               
-                
+
+        <div className='md:hidden block'>
+          <DrawerNav/>
         </div>
+
+        </div>
+
+       
+
     </div>
   )
 }

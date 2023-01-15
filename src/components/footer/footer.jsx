@@ -4,42 +4,42 @@ import { Icon } from '@iconify/react';
 function Footer() {
   return (
 
-<div className='bg-[#31156A] p-2 mt-[6em] '>
+<div className='bg-[#31156A] p-2 mt-[6em] overflow-x-hidden '>
 
     <div className='w-[90%] m-auto my-[5em]'>
-        <div className='flex justify-between '>
+        <div className='sm:flex grid grid-cols-2 sm:gap-0  gap-[20px] justify-between '>
 
-                <div>
-                    <p className='font-jarkta font-[700] text-[35px] text-white'>Sign up today</p>
+                <div className=''>
+                    <p className='font-jarkta font-[700] lg:text-[35px] sm:text-[25px] text-[20px] sm:w-auto w-full text-white'>Sign up today</p>
                 </div>
 
                 <div>
                     <ul>
-                        <p className='font-jarkta font-[900] text-[14px] text-white'>Services</p>
-                        <div className='text-left'>
-                            <li className='font-[400] my-4 cursor-pointer hover:underline opacity-90 text-[14px] text-white'>Features</li>
-                            <li className='font-[400] my-4 cursor-pointer hover:underline opacity-90 text-[14px] text-white'>Works</li>
-                            <li className='font-[400] my-4 cursor-pointer hover:underline opacity-90 text-[14px] text-white'>Career</li>
+                        <p className='font-jarkta font-[900] sm:text-[14px] text-[13px] text-white'>Services</p>
+                        <div className='sm:text-left text-center'>
+                            <li className='font-[400] my-4 cursor-pointer hover:underline opacity-90 sm:text-[14px] text-[11px] text-white'>Features</li>
+                            <li className='font-[400] my-4 cursor-pointer hover:underline opacity-90 sm:text-[14px] text-[11px] text-white'>Works</li>
+                            <li className='font-[400] my-4 cursor-pointer hover:underline opacity-90 sm:text-[14px] text-[11px] text-white'>Career</li>
                         </div>
                     </ul>
                 </div>
 
                 <div>
                     <ul>
-                        <p className='font-jarkta font-[900] text-left text-[14px] text-white'>About</p>
+                        <p className='font-jarkta font-[900] text-left sm:text-[14px] text-[13px] text-white'>About</p>
                         <div className='text-left'>
-                            <li className='font-[400] my-4 cursor-pointer hover:underline opacity-90 text-[14px] text-white'>Our Story</li>
-                            <li className='font-[400] my-4 cursor-pointer hover:underline opacity-90 text-[14px] text-white'>Benefits</li>
-                            <li className='font-[400] my-4 cursor-pointer hover:underline opacity-90 text-[14px] text-white'>Privacy Policy</li>
+                            <li className='font-[400] my-4 cursor-pointer hover:underline opacity-90 sm:text-[14px] text-[11px] text-white'>Our Story</li>
+                            <li className='font-[400] my-4 cursor-pointer hover:underline opacity-90 sm:text-[14px] text-[11px] text-white'>Benefits</li>
+                            <li className='font-[400] my-4 cursor-pointer hover:underline opacity-90 sm:text-[14px] text-[11px] text-white'>Privacy Policy</li>
                         </div>
                     </ul>
                 </div>
                 
                 
                 
-            <div>
-                <button className='transition-all w-[170px] bg-[#fff] rounded-[8px]
-                 py-4 font-nuni font-[600] text-[16px] hover:bg-transparent hover:border hover:text-white'>
+            <div className='sm:my-0 my-auto'>
+                <button className='transition-all sm:w-[170px] w-[120px] bg-[#fff] rounded-[8px]
+                 sm:py-4 py-2 font-nuni font-[600] text-[16px] hover:bg-transparent hover:border hover:text-white'>
                     Join us
                 </button>
             </div>
@@ -55,12 +55,12 @@ function Footer() {
         <div className='my-[2em]'>
 
             <div className='text-left my-8'>
-                <p className='font-nuni text-[20px] font-[700] text-white'>About BUone</p>
+                <p className='font-nuni sm:text-[20px] text-[15px] font-[700] text-white'>About BUone</p>
             </div>
 
            
-            <div className='w-[390px] text-left'>
-                <p className='font-rubi font-[400] text-[13px] text-white'>BUone is an all-in-one set
+            <div className='sm:w-[390px] w-[90%] text-left'>
+                <p className='font-rubi font-[400] sm:text-[13px] text-[10px] text-white'>BUone is an all-in-one set
                     of tools designed to rapidly
                     set up and scale clients for
                     freelancers and business owners

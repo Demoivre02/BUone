@@ -4,7 +4,7 @@ import Carousel from './carousel'
 
 function Faq() {
   return (
-    <div className=''>
+    <div className='sm:mb-auto mb-[3em]'>
         <Headers header="Frequently asked questions" text="This are the common questions asked by new and existing users" />
 
         <div>
