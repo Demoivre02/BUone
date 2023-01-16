@@ -1,10 +1,17 @@
-import React from 'react'
+import {React,useEffect} from 'react'
 import Nav from './nav'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 function Hero() {
+
+  useEffect(()=>{
+    Aos.init({duration:1000})
+  },[])
+
   return (
     <>
-        <div className=' bg-[#552AC1] lg:h-[100vh] overflow-y-hidden  '>
+        <div id='home' className=' bg-[#552AC1] lg:h-[100vh] overflow-y-hidden  '>
           
             <div className='w-[90%] isolate relative m-auto '>
 
@@ -16,8 +23,8 @@ function Hero() {
 
               <div className='lg:flex z-[1] justify-between items-center'>
                 
-                  <div className='text-left lg:mt-[1em] md:mt-[4em] mt-4 lg:text-left md:m-auto text-center m-auto '>
-                      <div className='my-[1em] md:text-center text-left '> 
+                  <div data-aos="fade-left" className='text-left lg:mt-[1em] md:mt-[4em] mt-4 lg:text-left md:m-auto text-center m-auto '>
+                      <div className='my-[1em] md:text-left text-left '> 
                         <small className='font-[400]  font-nuni text-[14px] text-white'>
                           Welcome To BUone
                         </small>
@@ -45,7 +52,7 @@ function Hero() {
                         <img className='md:w-[40%] w-[80%] lg:m-0 m-auto' src='images/users.png' alt='users' /> 
                       </div>
 
-                      <div className='md:w-[200px] w-[154px] md:h-[53px] h-[47px] lg:m-0 m-auto cursor-pointer flex justify-center items-center bg-[#A1EBE4] rounded-[11px] '>
+                      <div className='md:w-[200px] md:translate-y-[-25%] w-[154px] md:h-[53px] h-[47px] lg:m-0 m-auto cursor-pointer flex justify-center items-center bg-[#A1EBE4] rounded-[11px] '>
                         <p className='text-[#552AC1] font-nuni'>Get Started now</p>
                       </div>
 

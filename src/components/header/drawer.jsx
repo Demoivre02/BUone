@@ -26,10 +26,18 @@ function DrawerNav() {
                         
                         <div className="h-[80vh]">
                             <div className=" mt-28 text-center">   
-                                <p className="font-rubi text-[16px] font-[400] text-[#fff] my-6"  onClick={onClose}>Home</p>
-                                <p className="font-rubi text-[16px] font-[400] text-[#fff] my-6"  onClick={onClose}>Features</p>
-                                <p className="font-rubi text-[16px] font-[400] text-[#fff] my-6"  onClick={onClose}>Solutions</p>
-                                <p className="font-rubi text-[16px] font-[400] text-[#fff] my-6"  onClick={onClose}>Services</p>
+                                <p className="font-rubi text-[16px] font-[400] text-[#fff] my-6"  onClick={onClose}>
+                                    <a href='#home'>Home</a>
+                                </p>
+                                <p className="font-rubi text-[16px] font-[400] text-[#fff] my-6"  onClick={onClose}>
+                                    <a href='#features'>Features</a>
+                                </p>
+                                <p className="font-rubi text-[16px] font-[400] text-[#fff] my-6"  onClick={onClose}>
+                                    <a href='#solutions'>Solutions</a>
+                                </p>
+                                <p className="font-rubi text-[16px] font-[400] text-[#fff] my-6"  onClick={onClose}>
+                                    <a href='#services'>services</a>
+                                </p>
 
                                 <div onClick={onClose} className="w-[116px] mt-12 bg-transparent border mt-4 mx-auto rounded-[8px] justify-center flex items-center h-[40px]" > 
                                     <p className="text-[#fff] font-rubi font-[500]">Login</p>

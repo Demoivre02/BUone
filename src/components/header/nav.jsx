@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import DrawerNav from './drawer'
 
+
 function Nav() {
+
+
+
   return (
     <div className=' py-4' >
 
@@ -14,10 +18,23 @@ function Nav() {
                 <div className='md:flex hidden justify-evenly lg:w-[60%] w-[70%] items-center'>      
                   <div className=' lg:w-[500px] w-auto'>
                       <ul className='flex justify-evenly items-center'>
-                          <li className='font-[500] font-poppins lg:text-[14px] text-[12px] cursor-pointer text-[#fff] lg:w-[65px] w-[60px] lg:mx-[1.5em] mx-[12px]'>Home</li>
-                          <li className='font-[500] font-poppins lg:text-[14px] text-[12px] cursor-pointer text-[#fff] lg:w-[65px] w-[60px] lg:mx-[1.5em] mx-[12px]'>Features</li>
-                          <li className='font-[500] font-poppins lg:text-[14px] text-[12px] cursor-pointer text-[#fff] lg:w-[65px] w-[60px] lg:mx-[1.5em] mx-[12px]'>Solutions</li>
-                          <li className='font-[500] font-poppins lg:text-[14px] text-[12px] cursor-pointer text-[#fff] lg:w-[65px] w-[60px] lg:mx-[1.5em] mx-[12px]'>Services</li>
+                      
+                          <li className='font-[500] font-poppins lg:text-[14px] text-[12px] cursor-pointer text-[#fff] lg:w-[65px] w-[60px] lg:mx-[1.5em] mx-[12px]'>
+                            <a href='#home'>Home</a>
+                            </li>
+
+                          <li className='font-[500] font-poppins lg:text-[14px] text-[12px] cursor-pointer text-[#fff] lg:w-[65px] w-[60px] lg:mx-[1.5em] mx-[12px]'>
+                            <a href='#features'>Features</a>
+                          </li>
+
+                          <li className='font-[500] font-poppins lg:text-[14px] text-[12px] cursor-pointer text-[#fff] lg:w-[65px] w-[60px] lg:mx-[1.5em] mx-[12px]'>
+                            <a href='#solutions'>Solutions</a>
+                          </li>
+
+                          <li className='font-[500] font-poppins lg:text-[14px] text-[12px] cursor-pointer text-[#fff] lg:w-[65px] w-[60px] lg:mx-[1.5em] mx-[12px]'>
+                            <a href='#services'>services</a>
+                          </li>
+
                       </ul>
                   </div>
 

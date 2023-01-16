@@ -1,31 +1,37 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 
 function MobileScreenShots() {
+
+    useEffect(()=>{
+        Aos.init({duration:1500})
+    })
+
   return (
     <div>
         <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
 
             <SwiperSlide>
-                <div className='m-auto w-[80%]'>
+                <div data-aos="zoom-in" className='m-auto w-[80%]'>
                     <img className='w-[58%] m-auto ' src='images/phone1.png'/>
                 </div>
             </SwiperSlide>
 
             <SwiperSlide className='mb-8'>
-                <div className='m-auto w-[80%]'>
+                <div data-aos="zoom-in" className='m-auto w-[80%] '>
                     <img className='w-[58%] m-auto' src='images/phone2.png' />
                 </div>
             </SwiperSlide>
 
         </Swiper>
 
-            <div className='mt-[1em] lg:col-span-1 col-span-2 text-center'>
+            <div data-aos="zoom-in" className='mt-[1em] lg:col-span-1 col-span-2 text-center'>
                 <div className='sm:text-left text-center mt-[4em]  m-auto'>
 
                     <p className='font-nuni sm:ml-8 m-auto my-[10px] font-[700] lg:text-[45px] sm:text-[35px] text-[20px]'>Mobile app available</p>
@@ -42,7 +48,7 @@ function MobileScreenShots() {
                 </div>
             </div>
 
-        <div className='mx-auto mt-8'>
+        <div data-aos="zoom-in" className='mx-auto mt-8'>
             <img className='w-[58%] m-auto ' src='images/phone3.png' />
         </div>
 

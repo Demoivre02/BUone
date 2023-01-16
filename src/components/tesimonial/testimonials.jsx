@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Headers from '../headers/headers'
 import testiArray from './testimonialArray'
 import Fivestar from './fivestar'
+import Aos from 'aos'
 
 function Testimonials() {
+
+    useEffect(()=>{
+        Aos.init({duration:1500})
+    },[])
+
   return (
     <>
         <div className='my-[5em]'>
@@ -11,7 +17,7 @@ function Testimonials() {
 
             <div className='lg:grid gap-[20px] lg:p-[20px] px-[10px]  lg:w-[1070px] sm:w-[90%] w-[98%]  grid-cols-2 md:m-auto'>
                 {testiArray.map((items)=>{
-                    return <div className='sm:w-[500px] w-[95%] mt-4 shadow-[rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06)] sm:p-4 p-2 md:m-auto  rounded-[4px] shadow-sm'>
+                    return <div data-aos="zoom-in"  className='sm:w-[500px] w-[95%] mt-4 shadow-[rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06)] sm:p-4 p-2 md:m-auto hover:border border-[#007AFF]  rounded-[4px] shadow-sm'>
                     <div>
                         <Fivestar/>
                     </div>
