@@ -12,7 +12,7 @@ function Service() {
       },[])
 
   return (
-    <div id='services' className='lg:w-[1024px] w-[95%] mx-auto sm:my-[6em] my-[3em]'>
+    <div id='services' className='lg:w-[1024px] w-[95%] mx-auto sm:my-[6em] my-[3em] overflow-hidden'>
 
         <Headers header="Popular services available for you" text="Here are some of the services available on the app" />
 

@@ -11,7 +11,7 @@ function ScreenShot() {
     })
 
   return (
-    <div>
+    <div className='overflow-hidden'>
         <Headers header="Screenshots of the application" text="Get a glimpse of the app" />
 
         <div className='sm:grid hidden grid-cols-2 xl:w-[1100px] w-[90%] m-auto xl:gap-[100px] gap-[50px]'>

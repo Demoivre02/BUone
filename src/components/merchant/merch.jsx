@@ -10,7 +10,7 @@ function Merch() {
   },[])
 
   return (
-    <div  style={{background:"url('images/join-us.png')"}} className='bg-[#552AC1] sm:h-[500px] h-[290px] sm:mt-[8em] mt-[2em] grid place-items-center bg-center bg-no-repeat'>
+    <div  style={{background:"url('images/join-us.png')"}} className='bg-[#552AC1] sm:h-[500px] h-[290px] sm:mt-[8em] mt-[2em] grid place-items-center bg-center overflow-hidden bg-no-repeat'>
         <div>
 
             <div className='sm:mb-10 mb-4'>

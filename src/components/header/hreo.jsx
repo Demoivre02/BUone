@@ -5,13 +5,10 @@ import 'aos/dist/aos.css'
 
 function Hero() {
 
-  useEffect(()=>{
-    Aos.init({duration:1000})
-  },[])
 
   return (
     <>
-        <div id='home' className=' bg-[#552AC1] lg:h-[100vh] overflow-y-hidden  '>
+        <div id='home' className=' bg-[#552AC1] lg:h-[100vh] overflow-hidden  '>
           
             <div className='w-[90%] isolate relative m-auto '>
 
@@ -52,7 +49,7 @@ function Hero() {
                         <img className='md:w-[40%] w-[80%] lg:m-0 m-auto' src='images/users.png' alt='users' /> 
                       </div>
 
-                      <div className='md:w-[200px] md:translate-y-[-25%] w-[154px] md:h-[53px] h-[47px] lg:m-0 m-auto cursor-pointer flex justify-center items-center bg-[#A1EBE4] rounded-[11px] '>
+                      <div className='md:w-[200px] md:translate-y-[-%] w-[154px] md:h-[53px] h-[47px] lg:m-0 m-auto cursor-pointer flex justify-center items-center bg-[#A1EBE4] rounded-[11px] '>
                         <p className='text-[#552AC1] font-nuni'>Get Started now</p>
                       </div>
 

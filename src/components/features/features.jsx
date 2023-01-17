@@ -12,7 +12,7 @@ function Features() {
   },[])
 
   return (
-    <div id='features'>   
+    <div id='features' className='overflow-hidden'>   
 
         <Headers header="Our Features" text="he following features are offered on Buone to both users and merchants." />
 

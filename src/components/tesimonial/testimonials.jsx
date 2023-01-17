@@ -12,7 +12,7 @@ function Testimonials() {
 
   return (
     <>
-        <div className='my-[5em]'>
+        <div className='my-[5em] overflow-hidden' >
             <Headers text="See feedbacks from our esteemed customers" header="Customer testimonials"/>
 
             <div className='lg:grid gap-[20px] lg:p-[20px] px-[10px]  lg:w-[1070px] sm:w-[90%] w-[98%]  grid-cols-2 md:m-auto'>

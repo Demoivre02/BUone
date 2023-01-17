@@ -11,7 +11,7 @@ function Reasaon() {
 
   return (
     <>
-    <div id='solutions' className='lg:flex lg:ml-auto sm:ml-8 mx-auto  w-[90%] sm:mt-[6em] mt-[4em] items-center '>
+    <div id='solutions' className='lg:flex overflow-hidden lg:ml-auto sm:ml-8 mx-auto  w-[90%] sm:mt-[6em] mt-[4em] items-center '>
 
         <div  className='text-left lg:w-[682px] w-[100%] mr-8'>
 

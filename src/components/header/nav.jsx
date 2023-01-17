@@ -7,7 +7,7 @@ function Nav() {
 
 
   return (
-    <div className=' py-4' >
+    <div className=' py-4 overflow-hidden' >
 
         <div className='  flex justify-between items-center'>
 
